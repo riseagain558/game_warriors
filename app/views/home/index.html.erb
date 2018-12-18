@@ -1,1 +1,18 @@
 <h1>Game "Warriors"</h1>
+
+<h2>Online warriors:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @online_warriors.each do |warrior| %>
+      <tr>
+        <td><%= warrior.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
